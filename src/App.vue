@@ -1,13 +1,11 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <HomeSection/>
+    <HomeSection></HomeSection>
     <HelloWorld msg="Hello World !!"/>
   </div>
 </template>
 
 <script>
-//local Registration
 import HelloWorld from './components/HelloWorld.vue'
 import HomeSection from './components/HomeSection.vue'
 export default {
@@ -17,7 +15,6 @@ export default {
     HomeSection
   }
 }
-
 </script>
 
 <style>
