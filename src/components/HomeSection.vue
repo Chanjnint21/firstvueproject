@@ -8,23 +8,12 @@
 </template>
 
 <script lang="ts">
+import '../assets/css/styles.css'
 export default {
     data() {
     return{
-      name,
+      name: '',
     }
   }
 }
 </script>
-
-<style>
-.header{
-    background: black;
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-</style>
