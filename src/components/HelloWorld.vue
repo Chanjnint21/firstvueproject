@@ -1,10 +1,12 @@
 <template>
   <div class="hello">
     <h1>{{ msg  }}</h1>
+
     <h1 style="cursor: pointer;" @click="num++">{{ num }}</h1>
     <h1 style="cursor: pointer;" @click="num2++">{{ num2 }}</h1>
     <hr>
     <h1>{{ Sum }}</h1>
+    <button v-on:click="clear">Clear</button>
   </div>
 </template>
 
@@ -34,6 +36,12 @@ export default {
       return this.num + this.num2;
     },
   },
+  methods: {
+    clear: function(){
+      this.num = '0';
+      this.num2 = '0';
+    }
+  }
 }
 </script>
 
