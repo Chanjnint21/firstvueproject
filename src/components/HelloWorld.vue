@@ -1,20 +1,24 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg  }}</h1>
+  <v-container>
+      <h1>{{ msg  }}</h1>
 
     <h1 style="cursor: pointer;" @click="num++">{{ num }}</h1>
     <h1 style="cursor: pointer;" @click="num2++">{{ num2 }}</h1>
     <hr>
     <h1>{{ Sum }}</h1>
-    <button v-on:click="clear">Clear</button>
-  </div>
+    <v-btn v-on:click="clear"
+  color="primary"
+  elevation="2"
+  outlined
+  plain
+  raised
+>reset the Process</v-btn>
+  </v-container>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  //props to pass the value
-  props: {
+  export default {
+    props: {
     msg: String,
   },
   data(){
@@ -42,9 +46,5 @@ export default {
       this.num2 = '0';
     }
   }
-}
+  }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

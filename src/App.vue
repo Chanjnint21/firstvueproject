@@ -1,8 +1,10 @@
 <template>
-  <div id="app">
-    <HomeSection></HomeSection>
-    <HelloWorld msg="Hello World !!"/>
-  </div>
+  <v-app>
+    <v-main>
+      <HomeSection/>
+      <HelloWorld msg="Hello World!!"/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
@@ -14,7 +16,10 @@ export default {
   components: {
     HelloWorld,
     HomeSection
-  }
-}
-</script>
+  },
 
+  data: () => ({
+    //
+  }),
+};
+</script>

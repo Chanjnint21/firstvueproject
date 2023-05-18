@@ -1,7 +1,9 @@
 <template>
     <div class="header"> 
-        <div><h1>This is home Section !!</h1>
-        <input v-model="name" placeholder="Type your name...">
+        <div><h1>CLICK BELOW</h1>
+          <v-text-field class='name' color="white" v-model="name"
+            label="Type Your Name here"
+          ></v-text-field>
         <p>Welcome {{ name }} !</p>
     </div>
     </div>
